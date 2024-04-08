@@ -1,0 +1,352 @@
+html,
+body {
+  margin: 0 0;
+  padding: 0 0;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  /* Changed to column for mobile-first approach */
+  justify-content: center;
+  align-items: center;
+  /* Changed to center for consistent alignment */
+  margin: 0 10px;
+}
+
+.hero-title {
+  color: yellow;
+  z-index: 10;
+  font-size: 6vh;
+  /* Adjusted for smaller screens */
+  padding: 15px;
+  letter-spacing: -1.7px;
+  text-align: left;
+  /* Center title text */
+}
+
+.description-layout {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  /* Unified margin for simplicity */
+  max-width: 450px;
+  font-size: small;
+}
+
+.description1 {
+  color: white;
+  margin: 0;
+  padding-left: 15px;
+  display: block;
+  /* Adjusted for block-level display */
+}
+
+.description {
+  color: white;
+  margin-top: 10px;
+  padding-left: 15px;
+  display: block;
+
+}
+
+.hero-image {
+  opacity: 0.4;
+  width: 100%;
+  /* Adjusted for mobile screens */
+  object-fit: cover;
+  height: auto;
+  /* Changed to auto for aspect ratio maintenance */
+  margin: 0px 0;
+  /* Added margin for spacing */
+}
+
+.biography {
+  display: flex;
+  flex-direction: row;
+
+  /* Changed to column for mobile-first approach */
+  justify-content: center;
+  padding: 40px;
+  max-width: 80vh;
+  justify-content: center;
+  margin: 0 auto;
+
+}
+
+.bio-title {
+  margin-right: auto;
+  background-color: transparent;
+  font-size: large;
+  font-weight: 800;
+  text-align: center;
+  /* Center biography text */
+  color: yellow;
+  /* Ensure text is visible */
+  margin-right: 10%;
+
+}
+
+.bio-text {
+  font-weight: 100;
+  min-width: 25vh;
+  max-width: 50vh;
+  font-size: x-small;
+  background-color: transparent;
+  padding-top: 15px;
+
+  opacity: 50%;
+  text-align: left;
+  /* Center biography text */
+  color: white;
+  /* Ensure text is visible */
+
+}
+
+/* Media Queries for Tablet and Desktop */
+@media (min-width: 768px) {
+  .hero-section {
+    flex-direction: row;
+    /* Restore row layout for wider screens */
+  }
+
+  .hero-title {
+
+    font-size: 8vh;
+    /* Increase size for larger displays */
+    position: absolute;
+    /* Re-enable absolute positioning */
+    top: 30vh;
+    padding: 0 15px;
+    /* Adjust padding */
+  }
+
+  .hero-image {
+    width: 45%;
+    min-width: 200px;
+    max-width: 300px;
+    height: 100vh;
+    /* Restore full viewport height */
+    position: sticky;
+    top: 0px;
+  }
+
+  .description-layout {
+    margin-top: 30vh;
+    /* Reset margin top */
+  }
+}
+
+
+
+
+/* principles */
+
+.principle-card {
+  padding: 25px;
+  max-width: 80vh;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.card-layout {
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.number-layout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.text-box {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+
+.number {
+  display: inline-block;
+  color: yellow;
+  font-size: 5vh;
+  font-weight: bold;
+
+}
+
+.the-principle {
+  margin-right: auto;
+  font-weight: bold;
+  color: white;
+  align-items: center;
+  margin-left: 5px;
+  font-size: 2vh;
+  line-height: 1;
+  letter-spacing: -0.3px;
+  max-width: 200px;
+}
+
+.img-principle {
+  margin: 20px;
+  height: 20vh;
+  width: 20vh;
+  object-position: bottom;
+}
+
+.principle-description {
+  opacity: 60%;
+  color: white;
+  font-size: x-small;
+  width: auto;
+  margin-top: -10px;
+}
+
+
+
+
+/* contact section */
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
+  background-color: rgb(26, 26, 26);
+  color: white;
+  border-radius: 0;
+  border-style: none;
+  border-color: transparent;
+  text-decoration: underline;
+  font-size: 3vh;
+
+}
+
+.contact:hover {
+  transition: 0.15s;
+  background-color: rgb(29, 29, 29);
+}
+
+.contact:active {
+  transition: 0.15s;
+  background-color: yellow;
+  color: rgb(26, 26, 26);
+
+}
+
+
+
+.biography-text {
+  font-weight: 100;
+  font-size: x-small;
+  color: white;
+  display: block;
+  align-items: center;
+  margin: 10vh 5vh 5vh 5vh;
+  max-width: 450px;
+}
+
+
+
+
+
+
+.contact-title {
+  color: yellow;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  margin: 1rem 20vh 1rem 20vh;
+  font-size: 8vh;
+  justify-content: center;
+
+}
+
+
+.touch {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 15px;
+  max-width: 100rem;
+  align-items: center;
+  
+}
+
+.name-email {
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  max-width: 300px;
+  min-width: none;
+  column-gap: 15px;
+  width: 100%;
+  justify-content: center;
+}
+
+
+
+.input1 {
+  padding: 10px 2% 10px 10px;
+  border-radius: 0;
+  border-color: transparent;
+  color: grey;
+  background-color: rgb(225, 225, 225);
+  width: 100%;
+
+}
+.input2 {
+  padding: 10px 2% 10px 10px;
+  border-radius: 0;
+  border-color: transparent;
+  color: grey;
+  background-color: rgb(225, 225, 225);
+  width: 17.3rem;
+  margin-bottom: 20px;
+
+}
+
+.input1:focus {
+  color: rgb(0, 0, 0);
+  outline: none;
+}
+
+.input1::placeholder {
+  color: rgb(137, 137, 137);
+  border: none;
+  border-style: none;
+}
+
+.input2:focus {
+  color: rgb(0, 0, 0);
+  outline: none;
+}
+
+.input2::placeholder {
+  color: rgb(137, 137, 137);
+  border: none;
+  border-style: none;
+}
+
+
+
+/* display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+column-gap: 15px;
+row-gap: 10px;
+margin: 20px; */
+
+.message {
+  padding: 10px 2% 30% 10px;
+  border-radius: 0;
+  border-color: transparent;
+  color: grey;
+  background-color: rgb(225, 225, 225);
+  width: 100%;
+  height: 10%;
+}
